@@ -1,0 +1,14 @@
+version: "3.0"
+services:
+  nodejs-boilerplate:
+    image: nodejs-boilerplate
+    restart: always
+    ports:
+      - 8080:8080
+    environment:
+      TZ: "Europe/Minsk"
+      PORT: 8080
+      MONGO_URI: "mongodb+srv://admin:admin@cluster0-b0och.gcp.mongodb.net/test?retryWrites=true&w=majority"
+    build:
+      context: ./
+      dockerfile: Dockerfile

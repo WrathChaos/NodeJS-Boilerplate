@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "",
+  "db": "mongodb+srv://<username>:<password>@cluster0-b0och.gcp.mongodb.net/test?retryWrites=true&w=majority"
+}
